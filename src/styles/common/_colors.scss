@@ -1,0 +1,128 @@
+$greys: (
+    0: $white,
+    5: $basicGrey5,
+    10: $basicGrey10,
+    30: $basicGrey30,
+    50: $basicGrey50,
+    70: $basicGrey70,
+    100: $black,
+);
+
+$primaryLighterColor70: rgba-to-rgb(rgba(255, 255, 255, 1 - 0.7), $primaryColor);
+$primaryLighterColor50: rgba-to-rgb(rgba(255, 255, 255, 1 - 0.5), $primaryColor);
+$primaryLighterColor30: rgba-to-rgb(rgba(255, 255, 255, 1 - 0.3), $primaryColor);
+$primaryLighterColor10: rgba-to-rgb(rgba(255, 255, 255, 1 - 0.1), $primaryColor);
+$primaryLighterColor5: rgba-to-rgb(rgba(255, 255, 255, 1 - 0.05), $primaryColor);
+
+$primaryDarkerColor70: rgba-to-rgb(rgba(0, 0, 0, 0.7), $primaryColor);
+$primaryDarkerColor50: rgba-to-rgb(rgba(0, 0, 0, 0.5), $primaryColor);
+$primaryDarkerColor30: rgba-to-rgb(rgba(0, 0, 0, 0.3), $primaryColor);
+$primaryDarkerColor10: rgba-to-rgb(rgba(0, 0, 0, 0.1), $primaryColor);
+
+$secondaryLighterColor70: rgba-to-rgb(rgba(255, 255, 255, 1 - 0.7), $secondaryColor);
+$secondaryLighterColor50: rgba-to-rgb(rgba(255, 255, 255, 1 - 0.5), $secondaryColor);
+$secondaryLighterColor30: rgba-to-rgb(rgba(255, 255, 255, 1 - 0.3), $secondaryColor);
+$secondaryLighterColor10: rgba-to-rgb(rgba(255, 255, 255, 1 - 0.1), $secondaryColor);
+
+$secondaryDarkerColor80: rgba-to-rgb(rgba(0, 0, 0, 0.8), $secondaryColor);
+$secondaryDarkerColor70: rgba-to-rgb(rgba(0, 0, 0, 0.7), $secondaryColor);
+$secondaryDarkerColor50: rgba-to-rgb(rgba(0, 0, 0, 0.5), $secondaryColor);
+$secondaryDarkerColor30: rgba-to-rgb(rgba(0, 0, 0, 0.3), $secondaryColor);
+$secondaryDarkerColor10: rgba-to-rgb(rgba(0, 0, 0, 0.1), $secondaryColor);
+
+$primaries: (
+    base: $primaryColor,
+    highlight: $primaryHighlight,
+    lighter5: primaryLighterColor5,
+    lighter10: primaryLighterColor10,
+    lighter30: primaryLighterColor30,
+    lighter50: primaryLighterColor50,
+    lighter70: primaryLighterColor70,
+    darker10: primaryDarkerColor10,
+    darker30: primaryDarkerColor30,
+    darker50: primaryDarkerColor50,
+    darker70: primaryDarkerColor70,
+);
+
+$secondaries: (
+    base: #5472de,
+    highlight: #6486ff,
+    lighter10: rgba-to-rgb(rgba(255, 255, 255, 1 - 0.1), $secondaryColor),
+    lighter30: rgba-to-rgb(rgba(255, 255, 255, 1 - 0.3), $secondaryColor),
+    lighter50: rgba-to-rgb(rgba(255, 255, 255, 1 - 0.5), $secondaryColor),
+    lighter70: rgba-to-rgb(rgba(255, 255, 255, 1 - 0.7), $secondaryColor),
+    darker10: rgba-to-rgb(rgba(255, 255, 255, 0.1), $secondaryColor),
+    darker30: rgba-to-rgb(rgba(255, 255, 255, 0.3), $secondaryColor),
+    darker50: rgba-to-rgb(rgba(255, 255, 255, 0.5), $secondaryColor),
+    darker70: rgba-to-rgb(rgba(255, 255, 255, 0.7), $secondaryColor),
+    darker80: rgba-to-rgb(rgba(255, 255, 255, 0.8), $secondaryColor),
+);
+
+$bigbomColors: (
+    primary: $primaryColor,
+    secondary: $secondaryColor,
+    warning: $alternativeColor1,
+    success: $primaryHighlight,
+    alternative: $basicGrey70,
+    alternative1: $alternativeColor1,
+    alternative2: $alternativeColor2,
+    alternative3: $alternativeColor3,
+    alternative4: $alternativeColor4,
+    alternative5: $alternativeColor5,
+    alternative6: $alternativeColor6,
+    alternative7: $alternativeColor7,
+    alternative8: $alternativeColor8,
+);
+
+/*
+*   Colors
+*/
+@each $name, $value in $bigbomColors {
+    .text-#{$name} {
+        color: $value !important;
+    }
+
+    .bg-#{$name} {
+        background-color: $value !important;
+    }
+
+    .border-#{$name} {
+        border-color: $value !important;
+    }
+}
+@each $percent, $value in $greys {
+    .text-grey-#{$percent} {
+        color: $value !important;
+    }
+
+    .bg-grey-#{$percent} {
+        background-color: $value !important;
+    }
+
+    .border-grey-#{$percent} {
+        border-color: $value !important;
+    }
+}
+.text-white {
+    color: $white !important;
+}
+.bg-white {
+    background-color: $white !important;
+}
+.border-white {
+    border-color: $white !important;
+}
+
+// Gradient colors
+.gradient-primary {
+    background: $primaryGradient;
+}
+.gradient-secondary {
+    background: $secondaryGradient;
+}
+.gradient-mixed {
+    background: $mixedGradient;
+}
+.gradient-mixed-highlight {
+    background: $mixedGradientHighlight;
+}

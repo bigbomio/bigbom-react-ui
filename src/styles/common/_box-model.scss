@@ -1,0 +1,65 @@
+/**
+/**
+*   BOX MODEL utilities
+*/
+@each $name, $space in $spaces {
+    .p-#{$name} {
+        padding: $space !important;
+    }
+    .pt-#{$name} {
+        padding-top: $space !important;
+    }
+    .pb-#{$name} {
+        padding-bottom: $space !important;
+    }
+    .pl-#{$name} {
+        padding-left: $space !important;
+    }
+    .pr-#{$name} {
+        padding-right: $space !important;
+    }
+
+    .m-#{$name} {
+        margin: $space !important;
+    }
+    .mt-#{$name} {
+        margin-top: $space !important;
+    }
+    .mb-#{$name} {
+        margin-bottom: $space !important;
+    }
+    .ml-#{$name} {
+        margin-left: $space !important;
+    }
+    .mr-#{$name} {
+        margin-right: $space !important;
+    }
+
+    .rounded-#{$name} {
+        border-radius: $space !important;
+    }
+}
+.rounded-circle {
+    border-radius: 50% !important;
+}
+
+@each $name, $size in $sizes {
+    .w-#{$name} {
+        width: $size !important;
+    }
+    .minw-#{$name} {
+        min-width: $size !important;
+    }
+    .maxw-#{$name} {
+        max-width: $size !important;
+    }
+    .h-#{$name} {
+        height: $size !important;
+    }
+    .minh-#{$name} {
+        min-height: $size !important;
+    }
+    .maxh-#{$name} {
+        max-height: $size !important;
+    }
+}

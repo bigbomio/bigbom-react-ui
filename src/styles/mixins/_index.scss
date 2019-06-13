@@ -1,0 +1,65 @@
+@import './text';
+
+$iphone: 375px;
+$iphonePlus: 414px;
+$phone: 576px;
+$tablet: 768px;
+$desktop: 992px;
+$wideDesktop: 1200px;
+$laptop: 1366px;
+$wideLaptop: 1440px;
+$maxWidth: 1920px;
+
+@mixin iphone {
+    @media screen and (min-width: #{$iphone}) {
+        @content;
+    }
+}
+
+@mixin iphonePlus {
+    @media screen and (min-width: #{$iphonePlus}) {
+        @content;
+    }
+}
+
+@mixin phone {
+    @media screen and (min-width: #{$phone}) {
+        @content;
+    }
+}
+
+@mixin tablet {
+    @media screen and (min-width: #{$tablet}) {
+        @content;
+    }
+}
+
+@mixin desktop {
+    @media screen and (min-width: #{$desktop}) {
+        @content;
+    }
+}
+
+@mixin wideDesktop {
+    @media screen and (min-width: #{$wideDesktop}) {
+        @content;
+    }
+}
+
+@mixin laptop {
+    @media screen and (min-width: #{$laptop}) {
+        @content;
+    }
+}
+
+@mixin wideLaptop {
+    @media screen and (min-width: #{$wideLaptop}) {
+        @content;
+    }
+}
+
+@mixin maxWidth {
+    @media screen and (min-width: #{$maxWidth}) {
+        @content;
+    }
+}

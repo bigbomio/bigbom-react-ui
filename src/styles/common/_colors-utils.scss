@@ -1,0 +1,52 @@
+/*
+*   Colors
+*/
+@each $name, $value in $bigbomColors {
+    .text-#{$name} {
+        color: $value !important;
+    }
+
+    .bg-#{$name} {
+        background-color: $value !important;
+    }
+
+    .border-#{$name} {
+        border-color: $value !important;
+    }
+}
+@each $percent, $value in $greys {
+    .text-grey-#{$percent} {
+        color: $value !important;
+    }
+
+    .bg-grey-#{$percent} {
+        background-color: $value !important;
+    }
+
+    .border-grey-#{$percent} {
+        border-color: $value !important;
+    }
+}
+.text-white {
+    color: $white !important;
+}
+.bg-white {
+    background-color: $white !important;
+}
+.border-white {
+    border-color: $white !important;
+}
+
+// Gradient colors
+.gradient-primary {
+    background: linear-gradient(to bottom right, #68e065, $primaryColor);
+}
+.gradient-secondary {
+    background: linear-gradient(to bottom right, #6486ff, #5472de);
+}
+.gradient-mixed {
+    background: linear-gradient(to bottom right, $primaryColor, #5472de);
+}
+.gradient-mixed-highlight {
+    background: linear-gradient(to bottom right, #68e065, #6486ff);
+}

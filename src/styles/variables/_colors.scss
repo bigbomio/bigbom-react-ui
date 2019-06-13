@@ -1,0 +1,37 @@
+//Basic color
+$white: #ffffff !default;
+$black: #000000 !default;
+
+$basicGrey5: #f3f5f5 !default;
+$basicGrey10: #dfe3e4 !default;
+$basicGrey30: #aeb4b6 !default;
+$basicGrey50: #7a8082 !default;
+$basicGrey70: #4d4d4d !default;
+
+// Standar Color
+$primaryColor: #13a849 !default;
+$primaryHighlight: #00c246 !default;
+
+$alternativeColor1: #f26161 !default;
+$alternativeColor2: #cd5959 !default;
+$alternativeColor3: #c5f7c3 !default;
+$alternativeColor4: #ffe4e4 !default;
+$alternativeColor5: #dce4ff !default;
+$alternativeColor6: #ead6ff !default;
+$alternativeColor7: #8f5fc0 !default;
+$alternativeColor8: #ffa50a !default;
+
+$secondaryColor: #5472de !default;
+$secondaryHighlight: #6486ff !default;
+
+// Gradient
+$primaryGradient: linear-gradient(to bottom right, #68e065, $primaryColor) !default;
+$secondaryGradient: linear-gradient(to bottom right, #6486ff, #5472de) !default;
+$mixedGradient: linear-gradient(to bottom right, $primaryColor, #5472de) !default;
+$mixedGradientHighlight: linear-gradient(to bottom right, #68e065, #6486ff) !default;
+
+// Box shadow
+$shadowLow: 0px 2px 4px 0px rgba(0, 0, 0, 0.05) !default;
+$shadowMedium: 0px 8px 8px 0px rgba(0, 0, 0, 0.05) !default;
+$shadowHigh: 0px 12px 16px 0px rgba(0, 0, 0, 0.05) !default;
+$shadowPopup: 0px 20px 24px 0px rgba(0, 0, 0, 0.1) !default;

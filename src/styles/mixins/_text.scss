@@ -1,0 +1,130 @@
+@mixin bb-title1 {
+    font-family: $fontBase;
+    font-style: normal;
+    font-weight: bold;
+    line-height: 48px;
+    font-size: 40px;
+    text-transform: capitalize;
+    @content;
+}
+
+@mixin bb-title2 {
+    font-family: $fontBase;
+    font-style: normal;
+    font-weight: bold;
+    line-height: 40px;
+    font-size: 32px;
+    text-transform: capitalize;
+    @content;
+}
+
+@mixin bb-title3 {
+    font-family: $fontBase;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 32px;
+    font-size: 24px;
+    @content;
+}
+
+@mixin bb-title4 {
+    font-family: $fontBase;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 26px;
+    font-size: 18px;
+    @content;
+}
+
+@mixin bb-headline {
+    font-family: $fontBase;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px;
+    font-size: 16px;
+    @content;
+}
+
+@mixin bb-body {
+    font-family: $fontBase;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 22px;
+    font-size: 15px;
+    @content;
+}
+
+@mixin bb-callout {
+    font-family: $fontBase;
+    font-style: normal;
+    font-weight: bold;
+    line-height: 24px;
+    font-size: 15px;
+    @content;
+}
+
+@mixin bb-callout2 {
+    font-family: $fontBase;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px;
+    font-size: 15px;
+    letter-spacing: 0.1em;
+    @content;
+}
+
+@mixin bb-subhead {
+    font-family: $fontBase;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 20px;
+    font-size: 14px;
+    @content;
+}
+
+@mixin bb-subtext {
+    font-family: $fontBase;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 18px;
+    font-size: 13px;
+    @content;
+}
+
+@mixin bb-footnote {
+    font-family: $fontBase;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 16px;
+    font-size: 12px;
+    @content;
+}
+
+@mixin bb-caption-headline {
+    font-family: $fontBase;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 14px;
+    font-size: 11px;
+    @content;
+}
+
+@mixin bb-caption1 {
+    font-family: $fontBase;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 14px;
+    font-size: 11px;
+    letter-spacing: 0.01em;
+    @content;
+}
+
+@mixin bb-caption2 {
+    font-family: $fontBase;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 14px;
+    font-size: 10px;
+    letter-spacing: 0.01em;
+    @content;
+}

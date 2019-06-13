@@ -1,0 +1,70 @@
+.bb-tag {
+    @include bb-caption-headline();
+    padding: 4px 6px;
+    display: inline-block;
+    position: relative;
+    background-color: $basicGrey10;
+    border-radius: 4px;
+
+    &--primary {
+        color: $white;
+        background-color: $primaryColor;
+    }
+
+    &--secondary {
+        color: $white;
+        background-color: $secondaryColor;
+    }
+
+    &--warning {
+        color: $white;
+        background-color: $alternativeColor1;
+    }
+
+    &--small {
+        @include bb-caption2();
+        padding: 2px 4px;
+    }
+
+    &--large {
+        @include bb-title4();
+        padding: 8px 12px;
+    }
+
+    .bb-tag__close {
+        display: inline-block;
+        border: 0;
+        background-color: transparent;
+        cursor: pointer;
+        margin-left: 4px;
+        padding: 2px;
+        outline: 0;
+        text-decoration: none;
+
+        &:focus {
+        }
+    }
+}
+
+a.bb-tag {
+    @include bb-caption-headline();
+    color: $basicGrey70;
+
+    &--primary {
+        color: $white;
+    }
+
+    &--secondary {
+        color: $white;
+    }
+
+    &--warning {
+        color: $white;
+    }
+
+    &:hover,
+    &:focus,
+    &:active {
+        text-decoration: underline;
+    }
+}

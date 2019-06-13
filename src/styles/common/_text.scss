@@ -1,0 +1,84 @@
+/* *
+*   TEXT utilities */
+
+//Font
+.bb-title1 {
+    @include bb-title1;
+}
+
+.bb-title2 {
+    @include bb-title2;
+}
+
+.bb-title3 {
+    @include bb-title3;
+}
+
+.bb-title4 {
+    @include bb-title4;
+}
+
+.bb-headline {
+    @include bb-headline;
+}
+
+.bb-body {
+    @include bb-body;
+}
+
+.bb-callout {
+    @include bb-callout;
+}
+
+.bb-callout2 {
+    @include bb-callout2;
+}
+
+.bb-subhead {
+    @include bb-subhead;
+}
+
+.bb-subtext {
+    @include bb-subtext;
+}
+
+.bb-footnote {
+    @include bb-footnote;
+}
+
+.bb-caption-headline {
+    @include bb-caption-headline;
+}
+
+.bb-caption1 {
+    @include bb-caption1;
+}
+
+.bb-caption2 {
+    @include bb-caption2;
+}
+
+.text-center {
+    text-align: center !important;
+}
+.text-right {
+    text-align: right !important;
+}
+.text-left {
+    text-align: left !important;
+}
+.text-uppercase {
+    text-transform: uppercase !important;
+}
+.text-lowercase {
+    text-transform: lowercase !important;
+}
+.text-capitalize {
+    text-transform: capitalize !important;
+}
+.text-none {
+    text-transform: none !important;
+}
+.text-underline {
+    text-decoration: underline !important;
+}
