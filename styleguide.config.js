@@ -10,6 +10,10 @@ module.exports = {
     // Set the props and methods tabs to be expanded by default
     usageMode: 'expand',
     sections: [
+        {
+            name: 'Readme',
+            content: join(__dirname, 'README.md'),
+        },
         // {
         //     name: 'Bigbom Design System',
         //     sectionDepth: 2,
@@ -42,29 +46,6 @@ module.exports = {
             components: [join(__dirname, 'src/components/[A-Z]*/index.js')],
             sectionDepth: 2,
         },
-        // {
-        //     name: 'Bigbom Base Components',
-        //     components: [join(__dirname, 'src/app/components/base/[A-Z]*/index.js')],
-        //     sectionDepth: 2,
-        // },
-        // {
-        //     name: 'Bigbom Ads Documents',
-        //     sectionDepth: 2,
-        //     sections: [
-        //         {
-        //             name: 'Authenticate/Authorization',
-        //             content: join(__dirname, 'src/app/containers/auth2/README.md'),
-        //         },
-        //         {
-        //             name: 'Connect & Sync',
-        //             content: join(__dirname, 'src/app/containers/connect-sync/README.md'),
-        //         },
-        //         {
-        //             name: 'Dashboard',
-        //             content: join(__dirname, 'src/app/containers/dashboard/README.md'),
-        //         },
-        //     ],
-        // },
     ],
     require: [
         // Require global style file
@@ -72,7 +53,7 @@ module.exports = {
         // Require fixing style for Styleguidist
         join(__dirname, 'src/styles/index.scss'),
     ],
-    styleguideDir: 'styleguide-build',
+    styleguideDir: 'docs',
     theme: {
         sidebarWidth: 250,
         // Colors
