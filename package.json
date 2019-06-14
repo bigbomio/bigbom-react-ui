@@ -52,6 +52,7 @@
   ],
   "scripts": {
     "build": "rollup -c",
+    "build:docs": "styleguidist build",
     "watch": "rollup -c -w",
     "dev": "styleguidist server",
     "lint": "eslint src/**/*.js",
