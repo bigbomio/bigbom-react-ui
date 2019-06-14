@@ -1,5 +1,5 @@
 const { join } = require('path');
-const { createConfig, babel, css, sass, setOutput, match, file } = require('webpack-blocks');
+const { createConfig, babel, css, sass, setOutput, match, file, devServer } = require('webpack-blocks');
 const pkg = require('./package.json');
 
 module.exports = {
@@ -87,5 +87,7 @@ module.exports = {
         css(),
         match(['*.scss', '!*node_modules*'], [css(), sass(/* node-sass options */)]),
         match(['*.gif', '*.jpg', '*.jpeg', '*.png', '*.svg', '*.webp'], [file()]),
+        match(['*.md'], [file()]),
+        devServer()
     ]),
 };
