@@ -1,0 +1,28 @@
+.bb-status {
+    @include bb-caption2();
+    padding: 4px 6px;
+    display: inline-block;
+    position: relative;
+    color: $basicGrey30;
+    background-color: $basicGrey5;
+    border: 0;
+    outline: 0;
+    border-radius: 3px;
+    text-decoration: none;
+
+    @each $name, $value in $bigbomColors {
+        &--#{$name} {
+            color: $value !important;
+        }
+    }
+
+    &--small {
+        @include bb-caption2();
+        padding: 2px 4px;
+    }
+
+    &--large {
+        @include bb-title4();
+        padding: 8px 12px;
+    }
+}

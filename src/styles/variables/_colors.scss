@@ -8,7 +8,7 @@ $basicGrey30: #aeb4b6 !default;
 $basicGrey50: #7a8082 !default;
 $basicGrey70: #4d4d4d !default;
 
-// Standar Color
+// Standard Color
 $primaryColor: #13a849 !default;
 $primaryHighlight: #00c246 !default;
 
@@ -26,9 +26,9 @@ $secondaryHighlight: #6486ff !default;
 
 // Gradient
 $primaryGradient: linear-gradient(to bottom right, #68e065, $primaryColor) !default;
-$secondaryGradient: linear-gradient(to bottom right, #6486ff, #5472de) !default;
-$mixedGradient: linear-gradient(to bottom right, $primaryColor, #5472de) !default;
-$mixedGradientHighlight: linear-gradient(to bottom right, #68e065, #6486ff) !default;
+$secondaryGradient: linear-gradient(to bottom right, $secondaryHighlight, $secondaryColor) !default;
+$mixedGradient: linear-gradient(to bottom right, $primaryColor, $secondaryColor) !default;
+$mixedGradientHighlight: linear-gradient(to bottom right, #68e065, $secondaryHighlight) !default;
 
 // Box shadow
 $shadowLow: 0px 2px 4px 0px rgba(0, 0, 0, 0.05) !default;
