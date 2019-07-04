@@ -1,0 +1,204 @@
+a {
+    &.bb-button {
+        color: $white;
+        display: inline-block;
+    }
+    &.bb-button--alternative {
+        color: $basicGrey70;
+    }
+}
+.bb-button {
+    color: $white;
+    border: 0;
+    padding: 0.45rem 0.75rem;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 6px;
+    @include bb-subhead();
+
+    &:focus,
+    &:active,
+    &--active {
+        outline: 0;
+    }
+
+    &:disabled,
+    &[disabled] {
+        cursor: not-allowed;
+    }
+
+    &--none {
+        color: $basicGrey70;
+        border: 1px solid transparent;
+        background-color: transparent;
+
+        &:focus,
+        &:active,
+        &:hover,
+        &.bb-button--active {
+            border: 1px solid $basicGrey5;
+            background-color: $basicGrey5;
+        }
+
+        &:disabled {
+            color: $basicGrey30;
+            border: 1px solid lighten($basicGrey5, 2%);
+            background-color: lighten($basicGrey5, 2%);
+        }
+    }
+
+    &--primary {
+        border: 1px solid $primaryHighlight;
+        background-color: $primaryHighlight;
+
+        &:focus,
+        &:active,
+        &:hover,
+        &.bb-button--active {
+            color: $white;
+            border: 1px solid $primaryColor;
+            background-color: $primaryColor;
+        }
+
+        &:disabled,
+        &[disabled] {
+            border: 1px solid $primaryLighterColor50;
+            background-color: $primaryLighterColor50;
+        }
+    }
+
+    &--secondary {
+        border: 1px solid $secondaryHighlight;
+        background-color: $secondaryHighlight;
+
+        &:focus,
+        &:active,
+        &:hover,
+        &.bb-button--active {
+            color: $white;
+            border: 1px solid $secondaryColor;
+            background-color: $secondaryColor;
+        }
+
+        &:disabled,
+        &[disabled] {
+            border: 1px solid $secondaryLighterColor50;
+            background-color: $secondaryLighterColor50;
+        }
+    }
+
+    &--warning {
+        border: 1px solid $alternativeColor1;
+        background-color: $alternativeColor1;
+
+        &:focus,
+        &:active,
+        &:hover,
+        &.bb-button--active {
+            color: $white;
+            border: 1px solid $alternativeColor1;
+            background-color: $alternativeColor1;
+        }
+
+        &:disabled,
+        &[disabled] {
+            border: 1px solid $alternativeColor4;
+            background-color: $alternativeColor4;
+        }
+    }
+
+    &--alternative {
+        color: $basicGrey70;
+        background: linear-gradient(180deg, $white, $basicGrey5);
+        border: 1px solid $basicGrey10;
+
+        &:focus,
+        &:active,
+        &:hover,
+        &.bb-button--active {
+            background: linear-gradient(0deg, $white, $basicGrey5);
+        }
+
+        &:disabled,
+        &[disabled] {
+            opacity: 0.5;
+            color: $basicGrey50;
+        }
+    }
+
+    &--background-ghost {
+        background-color: transparent !important;
+        border-color: $white;
+        color: $white;
+
+        &.bb-button--none {
+            color: $basicGrey5;
+            border-color: $basicGrey5;
+
+            &:disabled,
+            &[disabled] {
+                color: lighten($basicGrey5, 2%);
+                border-color: lighten($basicGrey5, 2%);
+            }
+        }
+
+        &.bb-button--primary {
+            color: $primaryHighlight;
+            border-color: $primaryHighlight;
+
+            &:disabled,
+            &[disabled] {
+                color: $primaryLighterColor50;
+                border-color: $primaryLighterColor50;
+            }
+        }
+
+        &.bb-button--secondary {
+            color: $secondaryHighlight;
+            border-color: $secondaryHighlight;
+
+            &:disabled,
+            &[disabled] {
+                color: $secondaryLighterColor50;
+                border-color: $secondaryLighterColor50;
+            }
+        }
+
+        &.bb-button--warning {
+            color: $alternativeColor1;
+            border-color: $alternativeColor1;
+
+            &:disabled,
+            &[disabled] {
+                color: $alternativeColor4;
+                border-color: $alternativeColor4;
+            }
+        }
+
+        &.bb-button--alternative {
+            color: $basicGrey70;
+            border-color: $basicGrey70;
+
+            &:disabled,
+            &[disabled] {
+                color: #7a8082;
+                border-color: #7a8082;
+            }
+        }
+    }
+
+    &--small {
+        @include bb-caption-headline();
+        height: 24px;
+        min-width: 60px;
+        border-radius: 3px;
+        line-height: 14px;
+        padding: 4px 6px;
+    }
+
+    &--large {
+        @include bb-title4();
+        padding: 16px 24px;
+        height: 60px;
+    }
+}
