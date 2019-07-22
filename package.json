@@ -24,6 +24,7 @@
     "eslint-plugin-import": "^2.17.3",
     "eslint-plugin-jsx-a11y": "^6.2.1",
     "eslint-plugin-react": "^7.13.0",
+    "gh-pages": "^2.0.1",
     "jest": "^24.8.0",
     "normalize.css": "^8.0.1",
     "prettier": "^1.18.2",
@@ -53,6 +54,7 @@
   "scripts": {
     "build": "rollup -c",
     "build:docs": "styleguidist build",
+    "publish:docs": "styleguidist build && node publish-docs.js",
     "watch": "rollup -c -w",
     "dev": "styleguidist server",
     "lint": "eslint src/**/*.js",

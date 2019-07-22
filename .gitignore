@@ -64,3 +64,6 @@ typings/
 .DS_Store
 dist
 .idea/
+
+# Document build
+docs
