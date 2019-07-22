@@ -1,0 +1,15 @@
+.bb-vertical-separator {
+    display: inline-flex;
+    align-self: stretch;
+    padding: 8px 4px;
+    justify-content: center;
+    align-items: stretch;
+
+    &::before {
+        content: '';
+        display: block;
+        width: 1px;
+        align-self: stretch;
+        background-color: $basicGrey10;
+    }
+}
