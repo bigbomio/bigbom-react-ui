@@ -7,7 +7,7 @@ const Tag = ({ as, className, disposable, onClickClose, children, color, size, .
         'bb-tag',
         {
             ['bb-tag--' + color]: color !== 'none',
-            ['bb-tag--' + size]: size !== 'normal',
+            ['bb-tag--' + size]: size !== 'md',
             'bb-tag--disposable': disposable,
         },
         className
@@ -38,7 +38,7 @@ Tag.propTypes = {
     /** Color of tag */
     color: PropTypes.oneOf(['none', 'primary', 'secondary', 'warning', 'alternative']),
     /** Size of tag */
-    size: PropTypes.oneOf(['small', 'normal', 'large']),
+    size: PropTypes.oneOf(['sm', 'md', 'lg']),
     /** Content of tag */
     children: PropTypes.string.isRequired,
     /** Disposable tag */
@@ -49,7 +49,7 @@ Tag.propTypes = {
 
 Tag.defaultProps = {
     color: 'none',
-    size: 'normal',
+    size: 'md',
     disposable: false,
 };
 

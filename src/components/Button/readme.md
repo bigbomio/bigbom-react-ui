@@ -26,3 +26,13 @@ const customClassName = 'bb-button--warning';
     <Button className={customClassName}>This is a custom button</Button>
 </div>;
 ```
+
+### Button with various of sizes
+
+```js
+<div className="d-flex justify-space-between align-items-flex-start">
+    <Button size="sm">small</Button>
+    <Button size="md">medium</Button>
+    <Button size="lg">large</Button>
+</div>
+```

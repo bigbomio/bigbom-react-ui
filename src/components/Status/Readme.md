@@ -19,9 +19,9 @@ Three available sizes for `Status`
 
 ```js
 <div className="d-flex w-50 justify-space-between align-items-flex-start">
-    <Status size="small">small</Status>
+    <Status size="sm">small</Status>
     <Status>normal</Status>
-    <Status size="large">large</Status>
+    <Status size="lg">large</Status>
 </div>
 ```
 
@@ -31,10 +31,10 @@ Using custom type with property `as` to render `Status` as an Anchor element or 
 
 ```js
 <div className="">
-    <Status href="#" as="a" size="small">
+    <Status href="#" as="a" size="sm">
         This is an anchor
     </Status>
-    <Status className="m-sm" as="button" onClick={() => alert('clicked!')} size="small">
+    <Status className="m-sm" as="button" onClick={() => alert('clicked!')} size="sm">
         Click me!
     </Status>
 </div>

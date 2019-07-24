@@ -7,6 +7,7 @@ a {
         color: $basicGrey70;
     }
 }
+
 .bb-button {
     color: $white;
     border: 0;
@@ -187,18 +188,17 @@ a {
         }
     }
 
-    &--small {
+    &--sm {
         @include bb-caption-headline();
-        height: 24px;
         min-width: 60px;
         border-radius: 3px;
         line-height: 14px;
-        padding: 4px 6px;
+        padding: 0.25rem 0.3rem;
     }
 
-    &--large {
+    &--lg {
         @include bb-title4();
-        padding: 16px 24px;
-        height: 60px;
+        padding: 1rem 1.5rem;
+        border-radius: 6px;
     }
 }

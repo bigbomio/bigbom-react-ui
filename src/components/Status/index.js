@@ -7,7 +7,7 @@ const Status = ({ as, className, children, color, size, ...attrs }) => {
         'bb-status',
         {
             ['bb-status--' + color]: color !== 'none',
-            ['bb-status--' + size]: size !== 'normal',
+            ['bb-status--' + size]: size !== 'md',
         },
         className
     );
@@ -40,14 +40,14 @@ Status.propTypes = {
         'alternative8',
     ]),
     /** Size of tag */
-    size: PropTypes.oneOf(['small', 'normal', 'large']),
+    size: PropTypes.oneOf(['sm', 'md', 'lg']),
     /** Content of tag */
     children: PropTypes.string.isRequired,
 };
 
 Status.defaultProps = {
     color: 'none',
-    size: 'normal',
+    size: 'md',
 };
 
 export default Status;

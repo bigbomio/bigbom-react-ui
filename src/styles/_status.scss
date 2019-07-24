@@ -16,13 +16,13 @@
         }
     }
 
-    &--small {
+    &--sm {
         @include bb-caption2();
-        padding: 2px 4px;
+        padding: 0.1rem 0.15rem;
     }
 
-    &--large {
+    &--lg {
         @include bb-title4();
-        padding: 8px 12px;
+        padding: 0.5rem 0.8rem;
     }
 }

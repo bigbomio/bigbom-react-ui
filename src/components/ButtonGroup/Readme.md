@@ -39,33 +39,33 @@ const VerticalSeparator = require('../VerticalSeparator').default;
 
 <div className="d-flex justify-space-between align-items-flex-start">
     <ButtonGroup>
-        <Button color="primary" size="small">
+        <Button color="primary" size="sm">
             Small
         </Button>
         <VerticalSeparator />
-        <Button color="secondary" size="small">
+        <Button color="secondary" size="sm">
             Small
         </Button>
-        <Button color="warning" size="small">
+        <Button color="warning" size="sm">
             Small
         </Button>
-        <Button color="alternative" size="small">
+        <Button color="alternative" size="sm">
             Small
         </Button>
     </ButtonGroup>
 
     <ButtonGroup>
-        <Button color="primary" size="large">
+        <Button color="primary" size="lg">
             Large
         </Button>
         <VerticalSeparator />
-        <Button color="secondary" size="large">
+        <Button color="secondary" size="lg">
             Large
         </Button>
-        <Button color="warning" size="large">
+        <Button color="warning" size="lg">
             Small
         </Button>
-        <Button color="alternative" size="large">
+        <Button color="alternative" size="lg">
             Small
         </Button>
     </ButtonGroup>

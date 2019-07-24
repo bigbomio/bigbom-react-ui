@@ -29,8 +29,7 @@ const Button = ({ as, className, color, ghost, size, disabled, children, active,
 
 Button.defaultProps = {
     color: 'primary',
-    disabled: false,
-    ghost: false,
+    size: 'md',
 };
 
 Button.propTypes = {
@@ -49,7 +48,7 @@ Button.propTypes = {
     /** make background transparent and invert text and border colors*/
     ghost: PropTypes.bool,
     /** Size of button */
-    size: PropTypes.oneOf(['small', 'large']),
+    size: PropTypes.oneOf(['sm', 'md', 'lg']),
     /** Pass ref to inner */
     innerRef: PropTypes.func,
 };
