@@ -1,0 +1,41 @@
+$cardSizes: (
+    sm: 12px,
+    md: 16px,
+    lg: 20px,
+    xl: 24px,
+);
+
+.bb-card {
+    position: relative;
+    padding: 24px 20px;
+    border-radius: map-get($spaces, sm);
+    background-color: $white;
+
+    @each $name, $color in $bigbomColors {
+        &--#{$name} {
+            color: $white;
+            background-color: $color;
+        }
+    }
+
+    @each $name, $size in $cardSizes {
+        &--#{$name} {
+            font-size: $size;
+            padding: $size * 1.5 $size * 1.25;
+            border-radius: $size / 3;
+            border-radius: $size / 4;
+        }
+    }
+
+    &__header {
+        padding: 12px 16px;
+    }
+
+    &__body {
+        padding: 12px 16px;
+    }
+
+    &__footer {
+        padding: 6px 16px;
+    }
+}
